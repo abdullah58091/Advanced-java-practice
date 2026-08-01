@@ -17,5 +17,8 @@ public class Narrowing {
         System.out.println("Int    : " + d);
         System.out.println("Short  : " + e);
         System.out.println("Byte   : " + f);
+        System.out.println("--------------------------------------------------");
+        System.out.println(Thread.currentThread().getName() + " executed successfully.");
+        System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName() + " executed successfully.");
     }
 }
