@@ -1,9 +1,13 @@
+import java.util.Scanner;
 public class Narrowing {
     
     public static void main(String[] args) {
+        long startTime = System.currentTimeMillis();
         // Example of narrowing primitive conversion
 
-        double a = 10.5;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a double value: ");
+        double a = scanner.nextDouble();
         float b = (float) a;
         long c = (long) b;
         int d = (int) c;
@@ -20,5 +24,7 @@ public class Narrowing {
         System.out.println("--------------------------------------------------");
         System.out.println(Thread.currentThread().getName() + " executed successfully.");
         System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName() + " executed successfully.");
+        System.out.println("Execution time: " + (System.currentTimeMillis() - startTime) + " milliseconds");
+        
     }
 }

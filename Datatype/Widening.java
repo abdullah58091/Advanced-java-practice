@@ -1,8 +1,11 @@
+import java.util.Scanner;
+
 public class Widening {
 	public static void main(String[] args) {
 		// Example of widening primitive conversion
-
-        byte a = 10;
+        Scanner scanner  = new Scanner(System.in);
+        System.out.print("Enter a byte value: ");
+        byte a = scanner.nextByte();
         short b = a;
         int c = b;
         long d = c;
