@@ -126,4 +126,4 @@ To become proficient in Advanced Java concepts and prepare for technical intervi
 
 ### Author
 
-Abdullah
+Mohammad Abdullah
